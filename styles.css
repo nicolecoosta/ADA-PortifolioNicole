@@ -1,0 +1,391 @@
+body {
+  margin: 0px;
+  font-family: 'Fire Sans' Arial, Helvetica, sans-serif;
+  color: #141414 ;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
+
+  .subtitulo {
+    font-size: 144px;
+    line-height: 1;
+    word-break: break-all;
+    max-width: 5ch;
+  }
+
+  p {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 800px) {
+    .subtitulo {
+      font-size: 3rem;
+      text-transform:capitalize;
+      max-width: initial;
+    }
+  }
+
+  .header {
+    background-image: url('./img/header-back.svg');
+    background-repeat: repeat;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .header img{
+    width: 10%;
+    padding-left: 60px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .menu a:hover {
+    font-size: 28px;
+    font-weight: 600;
+     gap: 12px;
+     color: #7B001E;
+  }
+  
+  .menu a {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #e0e0ee;
+     font-family: "Spectral";
+      line-height: 1.125;
+  }
+  
+  
+  .mobile-menu-icon {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .header {
+      background-image: url('./img/header-mobile-d.svg');
+      padding: 10px 10px;
+      margin-bottom: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header {
+      background-image: url('./img/header-back-mobile.svg');
+      background-position: center;
+      padding: 30px 30px;
+      margin-bottom: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      align-items: end;
+    }
+    
+    .header img{
+      width: 25%;
+      position: absolute;
+      left: -40px;
+      top: 10px;
+    }
+    .nav-item {
+       display: none;
+     }
+     .menu:before {
+       display: none;
+     }
+     .mobile-menu-icon{
+      display: block;
+     }
+   .mobile-menu-icon button {
+       background-color: transparent;
+       border: none;
+       cursor: pointer;         
+   }
+  
+   .mobile-menu-icon img{
+    width: 15%;
+    margin-left: 260px;
+    margin-top: 10px;
+    z-index: 9999;
+   }
+   .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+    background-image: url('../img/aaaa.svg');
+  
+   }
+   .mobile-menu .nav-item {
+     display: block;
+     padding-top: 1.2rem;
+   }
+   .open {
+     display: block;
+   }
+   .nav-item  li + li  {
+     margin-top: 12px;
+   }
+   
+   .nav-link {
+    color: #e0e0ee;
+     margin: 0 1rem;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+   }
+   
+   .nav-item li:hover{
+     font-size: 22px;
+     gap: 12px;
+     color: #7B001E;
+   }
+  
+  }
+
+  .perfil-bg {
+    background: #0A1817;
+  }
+  
+  .perfil {
+      padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+   max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: auto;
+   margin-right: auto;
+    }
+  
+    .perfil img{
+      margin-top: 120px;
+    }
+    .perfil h1 {
+      font-size:  48px;
+      font-weight: 400;
+      padding-top: 80px;
+      position: relative;
+      color: #B8B8B8;
+      margin-top: 200px;
+      text-align: center;
+      font-family: "Spectral";
+      line-height: 1.125;
+    }
+  
+    .perfil h1 b {
+     color: #7B001E;
+     font-family: "Spectral";
+      line-height: 1.125;
+    }
+  
+    .perfil h2 {
+      font-size:  48px;
+      font-weight: 400;
+      position: relative;
+      color: #B8B8B8;
+      text-align: center;
+      font-family: "Spectral";
+      line-height: 1.125;
+    }
+    
+  
+    .botoes1{
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      margin-top: 60px;
+      margin-left: -60px;
+      box-shadow: 0 30px #0A1817;
+    }
+  
+    .botoes-mobile{
+      display: none;
+    }
+  
+    .hello{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #0A1817;
+      margin-top: 0px;
+    }
+    
+    @media (max-width: 900px) {
+      .perfil h1 {
+        font-size: 32px;
+      }
+      .perfil h2 {
+        font-size: 32px;
+        margin-top: 6px;
+      }
+      .perfil  {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+      .perfil h1::before {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        left: 0;
+        top: 5px;
+        background: linear-gradient(#7b001e, #bf2d50)
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      .perfil {
+      grid-template-columns: 1fr;
+     max-width: 360px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      }
+  
+      .perfil img{
+        margin-top: -20px;
+        width: 60%;
+        display: flex;
+      }
+  
+      .perfil h1 {
+        font-size:  26px;
+        padding-top: 10px; 
+        margin-top: -20px;
+        margin-bottom: -10px;
+        text-align: center;
+      }
+      .perfil h2 {
+        font-size:  26px;
+        margin-top: 12px;
+       }
+  
+      .botoes1{
+        display: none;
+      }
+  
+      .botoes-mobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 60px;
+        padding-right: 40px;
+        margin-top: -40px;
+      }
+  
+      .botoes-mobile a + a + a{
+        margin-top:10px;
+      }
+      .hello{
+        box-shadow: 0 -30px #0A1817;
+        margin-top: 20px;
+        margin-bottom: -2px;
+      }
+    }
+
+    .sobremim-bg {
+      background: #071514;
+  }
+    .sobremim {
+        padding: 40px 20px;
+          margin: 0 auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+       box-sizing: border-box;
+      max-width: 1200px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 260px;
+      }
+    
+  
+      .sobremim h1 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 120px;
+       color: #7B001E;
+       font-size: 64px;
+       font-family: "Spectral";
+      line-height: 1.125;
+      }
+    
+      .sobremim p {
+          font-size:  28px;
+          font-weight: 400;
+          padding-top: 80px;
+          position: relative;
+          color: #cccc;
+          margin-top: 20px;
+          text-align: center;
+          margin-bottom: -80px;
+          font-family: "Ubuntu";
+          line-height: 1.125;
+          }
+  
+          
+  
+  @media screen and (max-width: 768px) {
+           
+    .sobremim{
+      padding-bottom: 80px;
+    }
+    .sobremim h1 {
+         margin-top: 20px;
+         color: #7B001E;
+         font-size: 36px;
+        }
+      
+        .sobremim p {
+            font-size:  18px;
+            padding-top: 6px;
+             margin-bottom: -20px;
+             margin-left: auto;
+             margin-right: auto;
+            }
+  }
